@@ -8,11 +8,13 @@ import './index.css';
 const App = () => {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/resume-builder/:templateId" element={<ResumeBuilder />} />
-      </Routes>
+      <div className="app">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/resume-builder/:templateId" element={<ResumeBuilder />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 };

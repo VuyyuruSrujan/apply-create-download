@@ -1,75 +1,38 @@
 .resume-builder {
-  background-color: var(--light-gray);
-  min-height: calc(100vh - 70px);
   padding: 40px 0;
 }
 
-.resume-builder-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-.form-section {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.form-section h2 {
-  margin-bottom: 20px;
+.resume-builder h2 {
+  text-align: center;
+  margin-bottom: 2rem;
   color: var(--primary);
 }
 
-.section-item {
-  padding: 20px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.preview-section {
-  position: sticky;
-  top: 90px;
-  height: fit-content;
-}
-
-.preview-actions {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.resume-preview {
+.resume-form {
+  max-width: 800px;
+  margin: 0 auto;
   background: white;
-  padding: 30px;
+  padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  min-height: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.btn-secondary {
-  background-color: var(--light-gray);
-  color: var(--text);
-  border: 1px solid var(--border);
+.resume-form .form-group {
+  margin-bottom: 1.5rem;
 }
 
-.btn-secondary:hover {
-  background-color: var(--border);
-}
-
-textarea {
-  min-height: 100px;
+.resume-form textarea {
+  min-height: 120px;
   resize: vertical;
 }
 
+.resume-form button[type="submit"] {
+  width: 100%;
+  margin-top: 1rem;
+}
+
 @media (max-width: 768px) {
-  .resume-builder-content {
-    grid-template-columns: 1fr;
-  }
-  
-  .preview-section {
-    position: static;
+  .resume-form {
+    padding: 1rem;
   }
 }
