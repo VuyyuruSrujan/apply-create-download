@@ -1,0 +1,75 @@
+.resume-builder {
+  background-color: var(--light-gray);
+  min-height: calc(100vh - 70px);
+  padding: 40px 0;
+}
+
+.resume-builder-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.form-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-section h2 {
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.section-item {
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.preview-section {
+  position: sticky;
+  top: 90px;
+  height: fit-content;
+}
+
+.preview-actions {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.resume-preview {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  min-height: 800px;
+}
+
+.btn-secondary {
+  background-color: var(--light-gray);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+  background-color: var(--border);
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+@media (max-width: 768px) {
+  .resume-builder-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .preview-section {
+    position: static;
+  }
+}
